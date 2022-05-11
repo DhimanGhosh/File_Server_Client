@@ -1,0 +1,2 @@
+@ECHO OFF
+python -c "import http.server, socketserver; server = socketserver.TCPServer(('', 80), http.server.SimpleHTTPRequestHandler); print('Server running on port: 80\nVisit http://127.0.0.1:80/'); server.serve_forever()"
